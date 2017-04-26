@@ -1,0 +1,36 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-responsive.no-icons.min.css" rel="stylesheet">
+   <div id="keyname">Press any key.</div>
+ -<script src="/build/build.js"></script>
+ +<script src="../build/build.js"></script>var keycode = require('keycode');
+document.addEventListener('keydown', function(e) {
+  console.log("You pressed", keycode(e))
+})> for (var alias in keycode.aliases) { console.log(alias, keycode(keycode(alias))) }
+ctl ctrl
+pause pause/break
+break pause/break
+caps caps lock
+escape esc
+pgup page up
+pgdn page down
+ins insert
+del delete
+     89	Tim Oxley   
+    "name": "keycode",
+    "repo": "timoxley/keycode",
+    "description": "Map of keyboard codes",
+ -  "version": "2.1.7",
+ +  "version": "2.1.8",
+    "development": {
+      "timoxley/assert": "*"     74.3%
+     4	jkroso           6.1%
+     3	Amir Abu Shareb  4.5%
+     1	Greg Reimer      1.5%
+     1	Kenan Yildirim   1.5%
+     1	Abel Toledano    1.5%
+     1	Sam              1.5%
+     1	TJ Holowaychuk   1.5%
+     1	Yoshua Wuyts     1.5%
+     1	Nathan Zadoks    1.5%
+     1	Brenton Simpson  1.5%
+     1	Brian Noguchi    1.5%
+     1	Gilad Peleg      1.5%
